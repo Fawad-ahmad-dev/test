@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* width: 100%;
+  height: 100vh; */
+  background: url(image/AdobeStock_694508970_Preview.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 600px;
+}
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  width: 350px;
+  height: 350px;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 12px;
+  box-shadow: 0 0 5px 2px #fff;
+  backdrop-filter: blur(4px);
+}
+h1 {
+  font-size: 30px;
+  color: #fff;
+}
+.input-feild {
+  position: relative;
+}
+input {
+  border: none;
+  outline: none;
+}
+.input-feild input[type="email"],
+.input-feild input[type="password"] {
+  width: 280px;
+  height: 2px;
+  padding: 25px 40px 25px 20px;
+  border-radius: 10px;
+  margin: 15px;
+  background-color: transparent;
+  caret-color: #fff;
+  border: 2px solid #fff;
+  backdrop-filter: blur(15px);
+  color: #fff;
+}
+/* .input-feild input[type="email"]:required,
+.input-feild input[type="password"]:required {
+  background-color: rgba(255, 255, 255, 0.233);
+} */
+.input-feild input::placeholder {
+  color: #fff;
+}
+.input-feild i {
+  color: rgb(252, 252, 252);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+.input-feild input[type="email"]:focus::placeholder,
+.input-feild input[type="password"]:focus::placeholder {
+  transform: translateY(-100%);
+  transition: all 0.2s ease-in-out;
+  font-size: 14px;
+}
+.input-feild input[type="email"]:not(:focus)::placeholder,
+.input-feild input[type="password"]:not(:focus)::placeholder {
+  transform: translateY(0%);
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+}
+.wrapper a.forgot {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+a.forgot:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: #f2f2f2;
+}
+.signup {
+  text-decoration: none;
+  color: #fff;
+}
+.signup:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: #f2f2f2;
+}
+.login {
+  font-weight: 600;
+  width: 200px;
+  height: 30px;
+  border-radius: 45px;
+  border: none;
+  outline: none;
+  margin: 15px 0;
+}
