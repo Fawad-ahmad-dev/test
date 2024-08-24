@@ -29,6 +29,7 @@ body {
   backdrop-filter: blur(4px);
 }
 h1 {
+  margin: 10px 0;
   font-size: 30px;
   color: #fff;
 }
@@ -52,10 +53,10 @@ input {
   backdrop-filter: blur(15px);
   color: #fff;
 }
-/* .input-feild input[type="email"]:required,
+.input-feild input[type="email"]:required,
 .input-feild input[type="password"]:required {
   background-color: rgba(255, 255, 255, 0.233);
-} */
+}
 .input-feild input::placeholder {
   color: #fff;
 }
